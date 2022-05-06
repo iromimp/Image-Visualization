@@ -12,7 +12,7 @@ from dash.dependencies import Input, Output, State
 import tkinter
 from tkinter import filedialog as fd
 import variables
-from pymatreader import read_mat
+
 
 app = dash.Dash(__name__, update_title=None, external_stylesheets=[dbc.themes.BOOTSTRAP],
                 suppress_callback_exceptions=True)
