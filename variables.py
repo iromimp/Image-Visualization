@@ -18,11 +18,6 @@ def image_variables(filename_decode):
     print('max', np.max(ct_img))
     print('min', np.min(ct_img))
 
-    pt_pixel_spacing = data['pt_pixel_spacing']
-    pt_slice_thickness = data['pt_slice_thickness']
 
-    # calculate voxel volume
-    voxel_volume = (pt_pixel_spacing[0] * pt_pixel_spacing[1] * pt_slice_thickness) / 10
-    print(voxel_volume)
 
-    return ct_img, ct_pt_bone_mask, voxel_volume
+    return ct_img, ct_pt_bone_mask
