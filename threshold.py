@@ -153,7 +153,7 @@ def open_excel_function(open_excel):
     State('selected_directory', 'children'),
 )
 def create_volume_slicer(n_clicks, path):
-    ct_img, ct_pt_bone_mask, voxel_volume = variables.image_variables(path)
+    ct_img, ct_pt_bone_mask = variables.image_variables(path)
     # Create slicer objects
     slicer0 = VolumeSlicer(app, ct_img, axis=0, color="#00ff99", scene_id="ct_bone")
     slicer1 = VolumeSlicer(app, ct_img, axis=1, color="#00ff99", scene_id="ct_bone")
