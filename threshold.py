@@ -17,7 +17,7 @@ import variables
 app = dash.Dash(__name__, update_title=None, external_stylesheets=[dbc.themes.BOOTSTRAP],
                 suppress_callback_exceptions=True)
 server = app.server
-FILE_DIR = 'D:/data/'
+FILE_DIR = 'D:/data/' # This need to be a folder in your local machine to select the mat file. 
 
 app.layout = html.Div(
 
